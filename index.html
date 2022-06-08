@@ -15,7 +15,7 @@
     <div class="container">
         <div class="section__row">
             <div class="section__image">
-                <img src="images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_784.jpg" alt=""/>
+                <img src="images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_784.jpg" alt="zachód słońca na plaży"/>
             </div>
             <div class="section__content">
                 <h1 class="section__title">Lorem Ipsum</h1>
@@ -23,37 +23,41 @@
                     <source srcset="images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_1_1,c_fill,g_auto__c_scale,w_450.jpg"
                             media="(max-width: 650px)">
                     <source srcset="images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg"
-                            media="(max-width: 430)">
+                            media="(max-width: 430px)">
                     <img src="images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3,c_fill,g_auto__c_scale,w_538.jpg"
-                         alt=""/>
+                         alt="zachód słońca na plaży"/>
                 </picture>
                 <p class="section__text">Infinitely scalable, feature-rich and cloud-native data management and
                     protection for modern and
                     legacy
                     infrastructures and SaaS platforms, managed via a single app with no hardware required.</p>
-                <button class="section__btn js-handleModal" data-target="1" data-action="open">Button
-                </button>
+                <button title="Button" class="section__btn js-handleModal" data-target="1" data-action="open">Button</button>
             </div>
         </div>
     </div>
 </section>
 
-<div class="modal" data-modal="1">
-    <div class="modal__bg js-handleModal" data-target="1" data-action="close"></div>
+
+<div class="modal js-modal" data-modal="1">
+    <div class="modal__bg js-handleModal" data-action="close"></div>
     <div class="modal__body">
-        <button class="modal__close js-handleModal" data-action="close" data-target="1">
+        <button class="modal__close js-handleModal" data-action="close">
             <img src="images/icon__close.svg" alt="">
         </button>
         <div class="modal__content">
             <h1 class="modal__title">Alert!</h1>
             <p class="modal__text">You have clicked <strong>
-                <span data-clicked="1">X</span> times</strong>
+                <span class="js-clicked">X</span> times</strong>
                 to related button.
             </p>
-            <button class="modal__btn js-resetCounter" data-target="1">
-                Rest counter
+            <button title="Reset counter" class="modal__btn js-resetCounter">
+                Reset counter
             </button>
         </div>
     </div>
 </div>
+
+
+
+<script type="text/javascript" src="dist/all.js"></script>
 </body>
